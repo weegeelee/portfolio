@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;700&family=Open+Sans:wght@400;700&family=Quicksand:wght@400;700&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-me.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div id="page-logo">
+            <a href="index.html">Yu Chen</a>
+        </div>
+        <nav class="fixed-top">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="#projects">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="drawer-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <aside id="mobile-drawer">
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="#projects">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="hidden">
+        <section>
+            <div id="container">
+                <div id="box-img">
+                    <img src="images/profile-img.jpg">
+                </div>
+                <div id="box-text">
+                    <p>Hello, I'm <span>Yu Chen</span></p>
+                    <h2>Web Developer</h2>
+                    <p>This is my official Portfolio website to shows all <br> details and work experience web
+                        development
+                    </p>
+                    <a href="about.html">Read More</a>
+                    <a href="./assets/remuse.pdf" target="_blank">Download CV</a>
+                </div>    
+            </div>
+        </section>
+        <section id="projects">
+            <p>Browse My Recent</p>
+            <h2>Projects</h2>
+            <div id="project-container">
+                <ul>
+                    <li class="project-box">
+                        <div class="project-img"><img src="images/projects/paris.jpg" alt=""></div>
+                        <h3>Project One</h3>
+                        <a href="">GitHub</a>
+                        <a href="">Live Demo</a>
+                    </li>
+                    <li class="project-box">
+                        <div class="project-img"><img src="images/projects/sydney.jpg" alt=""></div>
+                        <h3>Project Two</h3>
+                        <a href="">GitHub</a>
+                        <a href="">Live Demo</a>
+                    </li>
+                    <li class="project-box">
+                        <div class="project-img"><img src="images/projects/tokyo.jpg" alt=""></div>
+                        <h3>Project Three</h3>
+                        <a href="">GitHub</a>
+                        <a href="">Live Demo</a>
+                    </li>
+                    <li class="project-box">
+                        <div class="project-img"><img src="images/projects/tokyo.jpg" alt=""></div>
+                        <h3>Project Four</h3>
+                        <a href="">GitHub</a>
+                        <a href="">Live Demo</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="images/icons8-eingekreistes-rangabzeichen-oben-24.png" alt="arrow icon" class="arrow-icon" onclick="location.href='./index.html'">
+        </section>
+        <section>
+            <div id="contact-box">
+                <p>Get in Touch</p>
+                <a href="contact.html">Contact Me</a>
+                <div id="contact-icon">
+                    <a href="mailto:weegeelee@hotmail.com" class="icon-img email-img"><img src="images/icons8-neuer-beitrag-64.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/yu-chen-8908ba253/" class="icon-img"><img src="images/icons8-linkedin-26.png" alt=""></a>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 Yu Chen. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
