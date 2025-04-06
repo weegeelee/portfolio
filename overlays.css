@@ -1,0 +1,91 @@
+.modal {
+    position: fixed;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    margin: auto;
+    max-width: 70rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    display: none;
+    z-index: 1000;
+}
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    z-index: 999;
+}
+
+.btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font: inherit;
+    font-size: 2rem;
+    color: rgb(173, 128, 76);
+    line-height: 0.5;
+    background-color: transparent;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: rgb(112, 78, 39);
+}
+
+.project-info {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.project-info img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.project-info div {
+    line-height: 1.5;
+    color: rgb(90, 90, 90);
+    padding: 3rem;
+}
+
+.project-info p, ul {   
+    margin-bottom: 2rem;
+}
+
+.project-info ul {
+    list-style: none;
+}
+
+.tech {
+    font-weight: bold;
+}
+
+@media (max-width: 740px) {
+    .project-info {
+        display: block;
+    }
+
+    .project-info img {
+        max-width: 20rem;
+        margin: auto;
+    }
+
+    .project-info div {
+        padding: 2rem 2rem 0 2rem;
+    }
+}
+

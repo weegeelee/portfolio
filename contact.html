@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +15,24 @@
     <link rel="stylesheet" href="contact.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header id="main-header">
-        <div id="page-logo">
+    <header class="main-header">
+        <div class="page-logo">
             <a href="index.html">Yu Chen</a>
         </div>
         <nav class="fixed-top">
             <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item"><a href="index.html#projects">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="header.home">Home</a></li>
+                <li class="nav-item"><a href="about.html" data-i18n="header.about">Über</a></li>
+                <li class="nav-item"><a href="index.html#projekt" data-i18n="header.projects">Projekte</a></li>
+                <li class="nav-item"><a href="contact.html" data-i18n="header.contact">Kontakt</a></li>
             </ul>
         </nav>
+        <div class="lang-box">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
+        </div>
         <button id="drawer-btn">
             <span></span>
             <span></span>
@@ -36,33 +42,51 @@
     <aside id="mobile-drawer">
         <nav>
             <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item"><a href="index.html#projects">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="header.home">Home</a></li>
+                <li class="nav-item"><a href="about.html" data-i18n="header.about">Über</a></li>
+                <li class="nav-item"><a href="index.html#projekt" data-i18n="header.projects">Projekte</a></li>
+                <li class="nav-item"><a href="contact.html" data-i18n="header.contact">Kontakt</a></li>
             </ul>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
         </nav>
     </aside>
-    <main class="hidden">
+    <main>
         <section>
-            <div id="container-form">
-                <h1>Contact Me</h1>
-                <div id="form-box">
-                    <div id="contact-form">
+            <div class="container-form">
+                <h1 data-i18n="contact.title">Kontakt</h1>
+                <div class="form-box">
+                    <div class="contact-form">
                         <form action="">
-                            <input type="text" placeholder="Name" required>
-                            <input type="email" name="" id="" placeholder="Email" required>
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
-                            <button type="submit">Send Message</button>
+                            <input type="text" placeholder="Name" data-i18n="contact.form.name" required>
+                            <input type="email" name="" id="" placeholder="E-Mail" data-i18n="contact.form.email" required>
+                            <input type="text" placeholder="Betreff" data-i18n="contact.form.subject" required>
+                            <textarea name="" id="" placeholder="Nachricht" data-i18n="contact.form.message" cols="30" rows="5" required></textarea>
+                            <button type="submit" data-i18n="contact.form.send">senden</button>
                         </form>
                     </div>
-                    <div id="contact-info">
-                        <h3>Email</h3>
+                    <div class="contact-info">
+                        <li>
+                            <img src="images/umschlag.png" alt="email logo">
+                            <h3 data-i18n="contact.info.email">E-Mail</h3>
+                        </li>
                         <p>weegeelee@hotmail.com</p>
-                        <h3>Phone</h3>
-                        <p>01744770154</p>
-                        <h3>Follow</h3>
+                        <li>
+                            <img src="images/anruf.png" alt="phone logo">
+                            <h3 data-i18n="contact.info.phone">Telefon</h3>
+                        </li>
+                        <p>+49 1744770154</p>
+                        <li>
+                            <img src="images/heim.png" alt="hause logo">
+                            <h3 data-i18n="contact.info.address">Adresse</h3>
+                        </li>
+                        <p>Max-Ernst-Strasse 13, 76744 Wörth</p>
+                        <li>
+                            <img src="images/benutzer-hinzufugen.png" alt="follow logo">
+                            <h3 data-i18n="contact.info.follow">folgen</h3>
+                        </li>
+                        <p><a href="https://www.linkedin.com/in/yu-chen-8908ba253/" class="icon-img"
+                                target="_blank"><img src="images/icons8-linkedin-26.png" alt=""></a></p>
                     </div>
                 </div>
             </div>

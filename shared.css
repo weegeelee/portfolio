@@ -11,52 +11,105 @@
 body {
     min-height: 100vh;
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.25rem;
-    background: linear-gradient(135deg, rgb(251, 237, 237), rgb(229, 236, 251)) 
+    font-size: 1rem;
+    background: linear-gradient(135deg, rgb(251, 240, 235), rgb(233, 242, 251));    
 }
 
-#main-header {
-    width: 90%;
+[data-lang] {
+    visibility: hidden; /* 先隐藏按钮，但仍然占位，防止跳动 */
+    opacity: 0;
+    
+}
+
+[data-lang].visible {
+    visibility: visible; /* 让目标按钮渐入 */
+    opacity: 1;
+}
+
+[data-lang].hidden {
+    display: none; /* JS 运行后才彻底隐藏不需要的按钮 */
+}
+
+.main-header {
+    width: 85%;
     height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    margin: auto;
-    /*z-index: 99;*/
+    padding: 1rem 0;
+    margin: 0 auto;
 }
 
-#page-logo a {
+.page-logo {
+    width: 50%;
+}
+.page-logo a {
     font-size: 2.5rem;
     font-weight: bold;
     color: rgb(173, 128, 76);
     text-decoration: none;
 }
 
-#main-header ul {
+.fixed-top {
     display: flex;
+    justify-content: space-between;
+    flex: 1;
+    visibility: hidden;
+    opacity: 0;
+    
 }
 
-#main-header li {
+.fixed-top.loaded {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lang-box {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-header ul {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+    margin: 1rem 0;
+}
+
+.main-header li {
     list-style: none;
-    padding: 0 1rem;
+    padding: 0 3rem 0 0;
 }
 
-
-#main-header ul a {
+.main-header ul a {
     color: rgb(173, 128, 76);
     text-decoration: none;
-    padding: 0.25rem 1rem;
-    border-color: rgb(255, 255, 255, .7);
-    border-radius: 30px;
+    text-decoration-color: transparent;
     transition: 0.4s ease-out;
 }
 
-#main-header ul a:hover {
-    color: rgb(137, 97, 51);
-    /*background-color: rgb(255, 255, 255, .5);*/
-    border: 0.1rem solid rgb(255, 255, 255, .7);
+.main-header ul a:hover {
+    color: rgb(197, 156, 110);
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255, .8);
+    text-underline-offset: 0.75rem;
 }
+
+.lang-btn {
+    color: rgb(173, 128, 76);
+    line-height: 0;
+    background-color: rgb(255, 255, 255, .6);
+    border: 2px solid rgb(255, 255, 255, .8);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.lang-btn:hover {
+    color: rgb(112, 78, 39);
+    background-color: rgb(255, 255, 255, .8);
+}
+
 
 #drawer-btn {
     width: 30px;
@@ -102,7 +155,14 @@ body {
     display: block;
 }
 
-#mobile-drawer ul {
+#mobile-drawer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#mobile-drawer ul{
     width: 90%;
     list-style: none;
     display: flex;
@@ -135,13 +195,17 @@ body {
     width: 100%;
 }
 
+#mobile-drawer button {
+    align-items: center;
+}
+
 .hidden .open {
     display: none
 }
 
 footer p {
     font-size: 0.75rem;
-    color: rgb(57, 56, 55);
+    color: rgb(90, 90, 90);
     text-align: center;
     margin: 5rem 0 1.5rem 0;
 }
@@ -149,10 +213,14 @@ footer p {
 
 
 @media (max-width: 740px) {
-    #main-header nav {
-        display: none;
+    .main-header {
+        justify-content: space-between;
     }
 
+    .fixed-top, .lang-box {
+        display: none;
+    }
+   
     #drawer-btn {
         display: flex;
     }

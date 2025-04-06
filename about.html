@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +11,29 @@
         href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;700&family=Open+Sans:wght@400;700&family=Quicksand:wght@400;700&family=Raleway&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="about-me.css">
-    <link rel="stylesheet" href="contact.css">
     <script src="script.js" defer></script>
+    <script src="about.js" defer></script>
 </head>
+
 <body>
-    <header id="main-header">
-        <div id="page-logo">
+    <header class="main-header">
+        <div class="page-logo">
             <a href="index.html">Yu Chen</a>
         </div>
         <nav class="fixed-top">
             <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item"><a href="index.html#projects">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="header.home">Home</a></li>
+                <li class="nav-item"><a href="about.html" data-i18n="header.about">Über</a></li>
+                <li class="nav-item"><a href="index.html#projekt" data-i18n="header.projects">Projekte</a></li>
+                <li class="nav-item"><a href="contact.html" data-i18n="header.contact">Kontakt</a></li>
             </ul>
         </nav>
+        <div class="lang-box">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
+        </div>
         <button id="drawer-btn">
             <span></span>
             <span></span>
@@ -36,24 +43,106 @@
     <aside id="mobile-drawer">
         <nav>
             <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item"><a href="index.html#projects">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="header.home">Home</a></li>
+                <li class="nav-item"><a href="about.html" data-i18n="header.about">Über</a></li>
+                <li class="nav-item"><a href="index.html#projekt" data-i18n="header.projects">Projekte</a></li>
+                <li class="nav-item"><a href="contact.html" data-i18n="header.contact">Kontakt</a></li>
             </ul>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
         </nav>
     </aside>
     <main class="hidden">
         <section>
-            <div id="container-about">
-                <h1>About Me</h1>
-                <div>
-                    <div><img src="" alt=""></div>
+            <div class="container-about">
+                <h1 data-i18n="about.title">Über mich</h1>
+                <div class="about-box">
+                    <div class="info-box">
+                        <p data-i18n="about.intro_one">Hallo! Ich bin Yu, ein Webentwickler mit Erfahrung im Marketing
+                            und Projektmanagement.
+                            Meine Reise in die Programmierung begann 2022, als ich beschloss, meine eigene
+                            Fotografie-Website zu erstellen. Dabei entdeckte ich schnell meine Begeisterung für die
+                            Kreativität und das Problemlösen beim Entwickeln für das Web. Diese Leidenschaft führte
+                            mich dazu, eine strukturierte Ausbildung in der Webentwicklung zu verfolgen.</p>
+                        <p data-i18n="about.intro_two">Als Linguist und Übersetzer war ich schon immer von Sprachen
+                            fasziniert, und das
+                            Eintauchen in die Programmierung fühlt sich an wie das Erlernen einer spannenden neuen
+                            Sprache. Es ermöglicht mir, meine analytischen Fähigkeiten mit meiner kreativen Vision
+                            zu verbinden, um intuitive und visuell ansprechende Web-Erlebnisse zu gestalten.</p>
+                        <p data-i18n="about.intro_three">Ich freue mich darauf, meine Begeisterung und
+                            Anpassungsfähigkeit in ein Team
+                            einzubringen, in dem ich mich weiterentwickeln und zu bedeutungsvollen Projekten
+                            beitragen kann.</p>
+                    </div>
+                    <div class="photo-box">
+                        <div><img src="images/about.jpg" alt=""></div>
+                    </div>
                 </div>
-                <div></div>
-            </div>  
+                <h3 data-i18n="about.skills">Fähigkeiten</h3>
+                <div class="skill-box">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>Node.js</p>
+                    <p>MongoDB</p>
+                    <p>PostgreSQL</p>
+                    <p>Typescript</p>
+                    <p>Bootstrap</p>
+                    <p>Git&GitHub</p>
+                </div>
+                <h3 data-i18n="about.experience">Berufserfahrung</h3>
+                <div class="work-box">
+                    <ul>
+                        <li class="company">
+                            <h4 class="company-name">Karls Tech GmbH</h4>
+                            <div class="content current" style="display: block;">
+                                <p data-i18n="about.companies.position_one">Vertrieb & Marketing | 2021 - jetzt</p>
+                                <ul data-i18n="about.companies.tasks_one">
+                                    <li>Designed and coded responsive email advertisements using HTML and inline CSS</li>
+                                    <li>Managed and maintained websites using WordPress</li>
+                                    <li>Preparation for trade fairs</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="company">
+                            <h4 class="company-name">Röser Verlag</h4>
+                            <div class="content">
+                                <p data-i18n="about.companies.position_two">Projektassistentin | 2018</p>
+                                <ul data-i18n="about.companies.tasks_two">
+                                    <li>Betreuung von Webseiten mit WordPress</li>
+                                    <li>Werbung und Marktverbreitung</li>
+                                    <li>Vorbereitung für Fachmessen</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="company">
+                            <h4 class="company-name">Ingenieurbüro Dipl.-Ing. H. Vössing</h4>
+                            <div class="content">
+                                <p data-i18n="about.companies.position_three">Projektassistentin | 2011</p>
+                                <ul data-i18n="about.companies.tasks_three">
+                                    <li>Unterstützung der Projektleitung</li>
+                                    <li>Betreuung der deutschen Experten und Dolmetschen</li>
+                                    <li>Koordinierung der Besprechung mit Kunden</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="company">
+                            <h4 class="company-name">Max Bögl</h4>
+                            <div class="content">
+                                <p data-i18n="about.companies.position_four">Assistentin/Überseterin | 2006 - 2011</p>
+                                <ul data-i18n="about.companies.tasks_four">
+                                    <li>Dolmetschen und Übersetzung</li>
+                                    <li>Terminplanung und Koordination von Geschäftsreisen</li>
+                                    <li>Oganisation der technischen Schulung für die Kunden</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
-    </main>   
+    </main>
     <footer>
         <p>Copyright &copy; 2023 Yu Chen. All Rights Reserved</p>
     </footer>

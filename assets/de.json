@@ -1,0 +1,74 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "Über",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
+    "main": {
+        "intro": "Hallo, ich bin <span class='highlight'>Yu Chen</span>",
+        "role": "Webentwicklerin",
+        "description": "Dies ist meine offizielle Portfolio-Website, um alle Details <br /> und Erfahrungen in der Webentwicklung zu zeigen.",
+        "learn_more": "Mehr erfahren",
+        "download": "Lebenslauf herunterladen"
+    },
+    "projects": {
+        "title": "Durchsuchen Sie meine",
+        "subtitle": "Projekte",
+        "tic_tac_toe": "Tic Tac Toe Spiel",
+        "food_order": "Essen Bestellung",
+        "project_three": "Fotografie Shop",
+        "project_four": "Project Four"
+    },
+    "modal_one": {
+        "description_one": "Das ist eine einfache und interaktive Umsetzung des klassischen Tic-Tac-Toe-Spiels, entwickelt mit HTML, CSS und JavaScript. Das Projekt ermöglicht es zwei Spielern, abwechselnd Felder auf einem 3x3-Raster zu markieren, bis einer eine Gewinnkombination erreicht oder das Spiel unentschieden endet.",
+        "description_two": "<li>Zu den Hauptmerkmalen gehören:</li><li>Eine übersichtliche und responsive Benutzeroberfläche</li><li>Visuelle Rückmeldung für Spieleraktionen</li><li>Logik zur Erkennung von Gewinnen, Niederlagen und Unentschieden</li>",
+        "description_three": "Dieses Projekt demonstriert grundlegende Frontend-Entwicklungsfähigkeiten, einschließlich DOM-Manipulation, Event-Handling und grundlegende Spiellogik."
+    },
+    "modal_two": {
+        "description_one": "Dies ist eine Online-Bestellplattform für Essen, die mit React entwickelt wurde und Firebase als Datenbank nutzt. Sie ermöglicht es Benutzern, eine Speisekarte zu durchsuchen, einen Warenkorb zu verwalten und Bestellungen aufzugeben.",
+        "description_two": "Dieses Projekt demonstriert Fähigkeiten in komponentenbasierter React-Entwicklung, Zustandsverwaltung (useState, useReducer) und Firebase-Integration und eignet sich als Beispiel für eine einfache E-Commerce-Anwendung."
+    },
+    "modal_three": {
+        "description_one": "Dies ist eine moderne Webanwendung für professionelle Fotografen/innen. Sie kombiniert ein elegantes öffentliches Portfolio mit einem geschützten Kundenbereich und einem Admin-Panel zur effizienten Verwaltung von Aufträgen, Alben und Kommunikation.",
+        "description_two": "<li>Verwendete Technologien:</li><li>Frontend: React, Vite, CSS</li><li>Backend: Node.js Express</li><li>Datenbank: MongoDB</li><li>Speicher: Supabase (Cloud-Speicher für Fotos)</li>"
+    },
+    "cta": {
+        "title": "Nehmen Sie Kontakt auf",
+        "button": "Kontakt"
+    },
+    "about": {
+        "title": "Über mich",
+        "intro_one": "Hallo! Ich bin Yu, eine Webentwicklerin mit Erfahrung im Marketing und Projektmanagement. Meine Reise in die Programmierung begann 2022, als ich beschloss, meine eigene Fotografie-Website zu erstellen. Dabei entdeckte ich schnell meine Begeisterung für die Kreativität und das Problemlösen beim Entwickeln für das Web. Diese Leidenschaft führte mich dazu, eine strukturierte Ausbildung in der Webentwicklung zu verfolgen.",
+        "intro_two": "Als Linguist und Übersetzer war ich schon immer von Sprachen fasziniert, und das Eintauchen in die Programmierung fühlt sich an wie das Erlernen einer spannenden neuen Sprache. Es ermöglicht mir, meine analytischen Fähigkeiten mit meiner kreativen Vision zu verbinden, um intuitive und visuell ansprechende Web-Erlebnisse zu gestalten.",
+        "intro_three": "Ich freue mich darauf, meine Begeisterung und Anpassungsfähigkeit in ein Team einzubringen, in dem ich mich weiterentwickeln und zu bedeutungsvollen Projekten beitragen kann.",
+        "skills": "Fähigkeiten",
+        "experience": "Berufserfahrung",
+        "companies": {
+            "position_one": "Vertrieb & Marketing | 2021 - jetzt",
+            "tasks_one": "<li>Kundenberatung, Bestandskundenbetreuung und Neukundenakquisition</li><li>Konzeption und Umsetzung von responsiven E-Mail-Kampagnen mit HTML und Inline-CSS</li><li>Werbung und Marktentwicklung<li>",
+            "position_two": "Projektassistentin | 2018",
+            "tasks_two": "<li>Betreuung von Webseiten mit WordPress</li><li>Werbung und Marktverbreitung</li><li>Vorbereitung für Fachmessen</li>",
+            "position_three": "Projektassistentin | 2011",
+            "tasks_three": "<li>Unterstützung der Projektleitung</li><li>Betreuung der deutschen Experten und Dolmetschen</li><li>Koordinierung der Besprechung mit Kunden</li>",
+            "position_four": "Assistentin & Übersetzerin | 2006 - 2011",
+            "tasks_four": "<li>Dolmetschen und Übersetzung</li><li>Terminplanung und Koordination von Geschäftsreisen</li><li>Oganisation der technischen Schulung für die Kunden</li>"
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "form": {
+            "name": "Name",
+            "email": "E-Mail",
+            "subject": "Betreff",
+            "message": "Nachricht",
+            "send": "senden"
+        },
+        "info": {
+            "email": "E-Mail",
+            "phone": "Telefon",
+            "address": "Adresse",
+            "follow": "folgen"
+        }
+    }
+}

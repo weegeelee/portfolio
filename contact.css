@@ -1,4 +1,4 @@
-#container-form {
+.container-form {
     width: 85%;
     background-color: rgb(255, 255, 255, .2);
     border-radius: 2rem;
@@ -8,32 +8,27 @@
 h1 {
     text-align: center;
     font-size: 2rem;
-    color: rgb(57, 56, 55);
+    color: rgb(72, 72, 72);
     padding-top: 3rem;
 }
 
-#form-box {
+.form-box {
     display: flex;
-    justify-content: space-between;
-    padding: 2rem 0 4rem 0;
+    justify-content: space-evenly;
+    padding: 2rem 0rem 4rem 0rem;
 }
 
-#contact-form {
-    width: 50%;
+.contact-form {
+    width: 60%;
     padding: 0 4rem;
 }
 
-/*form {
-    width: 100%;
-}*/
-
 input, textarea {
     font: inherit;
-    font-size: 1rem;
     width: 100%;
     display: block;
     border: 2px solid rgb(255, 255, 255, .8);
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, .6);
     border-radius: 25px;
     padding: 0.5rem 1.5rem;
     margin: 2rem 0;
@@ -41,15 +36,13 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, .8);
 }
-
 
 button {
     font: inherit;
-    font-size: 1rem;
     color: rgb(173, 128, 76);
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, .6);
     border: 2px solid rgb(255, 255, 255, .8);
     border-radius: 25px;
     padding: 0.5rem 1.5rem;
@@ -57,35 +50,47 @@ button {
 
 button:hover {
     color: rgb(112, 78, 39);
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, .8);
 }
 
-#contact-info {
-    width: 50%;
-    padding: 2.5rem 7.5rem;
+.contact-info {
+    padding: 4rem 4rem;
 }
 
-#contact-info h3 {
-    font-size: 1.25rem;
-    padding-top: 2rem;
+.contact-info li {
+    display: flex;
+    vertical-align: middle;
 }
 
-#contact-info p {
-    font-size: 1rem;
-    padding: 0.5rem 0;
+.contact-info img{
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+}
+
+.contact-info h3 {
+    color: rgb(72, 72, 72);
+    line-height: 1;
+    padding: 0 1.5rem;
+}
+
+.contact-info p {
+    color: rgb(72, 72, 72);
+    padding: 0.75rem 0 0 2.75rem;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 740px) {
-    #form-box {
+    .form-box {
         display: block;
     }
 
-    #contact-form {
+    .contact-form {
         width: 100%;
       
     }
 
-    #contact-info {
+    .contact-info {
         width: 100%;
     }
 }

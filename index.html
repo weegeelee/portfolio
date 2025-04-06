@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,23 +12,29 @@
         rel="stylesheet">
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about-me.css">
+    <link rel="stylesheet" href="overlays.css">
     <script src="script.js" defer></script>
+    <script src="modal.js" defer></script>
 </head>
 
 <body>
-    <header id="main-header">
-        <div id="page-logo">
+    <div id="backdrop"></div>
+    <header class="main-header">
+        <div class="page-logo">
             <a href="index.html">Yu Chen</a>
         </div>
         <nav class="fixed-top">
             <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item"><a href="#projects">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="header.home">Home</a></li>
+                <li class="nav-item"><a href="about.html" data-i18n="header.about">Über</a></li>
+                <li class="nav-item"><a href="index.html#projekt" data-i18n="header.projects">Projekte</a></li>
+                <li class="nav-item"><a href="contact.html" data-i18n="header.contact">Kontakt</a></li>
             </ul>
         </nav>
+        <div class="lang-box">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
+        </div>
         <button id="drawer-btn">
             <span></span>
             <span></span>
@@ -34,77 +44,150 @@
     <aside id="mobile-drawer">
         <nav>
             <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item"><a href="#projects">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="index.html" data-i18n="header.home">Home</a></li>
+                <li class="nav-item"><a href="about.html" data-i18n="header.about">Über</a></li>
+                <li class="nav-item"><a href="index.html#projekt" data-i18n="header.projects">Projekte</a></li>
+                <li class="nav-item"><a href="contact.html" data-i18n="header.contact">Kontakt</a></li>
             </ul>
+            <div>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
         </nav>
     </aside>
     <main class="hidden">
         <section>
-            <div id="container">
-                <div id="box-img">
+            <div class="container">
+                <div class="box-img">
                     <img src="images/profile-img.jpg">
                 </div>
-                <div id="box-text">
-                    <p>Hello, I'm <span>Yu Chen</span></p>
-                    <h2>Web Developer</h2>
-                    <p>This is my official Portfolio website to shows all <br> details and work experience web
-                        development
+                <div class="box-text">
+                    <p data-i18n="main.intro">Hallo, ich bin <span>Yu Chen</span></p>
+                    <h2 data-i18n="main.role">Webentwicklerin</h2>
+                    <p data-i18n="main.description">Dies ist meine offizielle Portfolio-Website, um alle Details und
+                        Erfahrungen in der Webentwicklung zu zeigen.
                     </p>
-                    <a href="about.html">Read More</a>
-                    <a href="./assets/remuse.pdf" target="_blank">Download CV</a>
-                </div>    
+                    <a href="about.html" data-i18n="main.learn_more">Mehr erfahren</a>
+                    <a href="./assets/remuse.pdf" target="_blank" data-i18n="main.download"
+                        id="download-link">Lebenslauf herunterladen</a>
+                </div>
             </div>
         </section>
-        <section id="projects">
-            <p>Browse My Recent</p>
-            <h2>Projects</h2>
-            <div id="project-container">
+        <section id="projekt">
+            <p data-i18n="projects.title">Browse My Recent</p>
+            <h2 data-i18n="projects.subtitle">Projekte</h2>
+            <div class="project-container">
                 <ul>
                     <li class="project-box">
-                        <div class="project-img"><img src="images/projects/paris.jpg" alt=""></div>
-                        <h3>Project One</h3>
-                        <a href="">GitHub</a>
-                        <a href="">Live Demo</a>
+                        <div class="project-img"><img src="images/projects/tic-tac-toe.png" alt=""></div>
+                        <h3 class="project-one" data-i18n="projects.tic_tac_toe">Tic Tac Toe Game</h3>
+                        <a href="https://github.com/weegeelee/tic-tac-toe" target="_blank">GitHub</a>
+                        <a href="https://weegeelee.github.io/tic-tac-toe/" target="_blank">Live Demo</a>
                     </li>
                     <li class="project-box">
-                        <div class="project-img"><img src="images/projects/sydney.jpg" alt=""></div>
-                        <h3>Project Two</h3>
-                        <a href="">GitHub</a>
-                        <a href="">Live Demo</a>
+                        <div class="project-img"><img src="images/projects/food-order.png" alt=""></div>
+                        <h3 class="project-two" data-i18n="projects.food_order">Food Order</h3>
+                        <a href="https://github.com/weegeelee/food-order" target="_blank">GitHub</a>
+                        <a href="https://weegeelee.github.io/food-order/" target="_blank">Live Demo</a>
                     </li>
                     <li class="project-box">
-                        <div class="project-img"><img src="images/projects/tokyo.jpg" alt=""></div>
-                        <h3>Project Three</h3>
-                        <a href="">GitHub</a>
-                        <a href="">Live Demo</a>
-                    </li>
-                    <li class="project-box">
-                        <div class="project-img"><img src="images/projects/tokyo.jpg" alt=""></div>
-                        <h3>Project Four</h3>
-                        <a href="">GitHub</a>
-                        <a href="">Live Demo</a>
+                        <div class="project-img"><img src="images/projects/fotografie-shop.png" alt=""></div>
+                        <h3 class="project-three" data-i18n="projects.project_three">Photography Shop</h3>
+                        <a href="https://github.com/weegeelee/yu-focus-fotografie" target="_blank">GitHub</a>
+                        <a href="https://weegeelee.github.io/yu-focus-fotografie" target="_blank">Live Demo</a>
                     </li>
                 </ul>
             </div>
-            <img src="images/icons8-eingekreistes-rangabzeichen-oben-24.png" alt="arrow icon" class="arrow-icon" onclick="location.href='./index.html'">
+            <img src="images/icons8-eingekreistes-rangabzeichen-oben-24.png" alt="arrow icon" class="arrow-icon"
+                onclick="location.href='./index.html'">
         </section>
-        <section>
-            <div id="contact-box">
-                <p>Get in Touch</p>
-                <a href="contact.html">Contact Me</a>
-                <div id="contact-icon">
-                    <a href="mailto:weegeelee@hotmail.com" class="icon-img email-img"><img src="images/icons8-neuer-beitrag-64.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/yu-chen-8908ba253/" class="icon-img"><img src="images/icons8-linkedin-26.png" alt=""></a>
+        <aside class="modal cofig-overlay-one">
+            <div class="project-info">
+                <div>
+                    <img src="images/projects/tic-tac-toe.png" alt="">
                 </div>
-                
+                <div>
+                    <p class="tech">HTML | CSS | Javascript</p>
+                    <p data-i18n="modal_one.description_one">
+                        This is a simple and interactive implementation of the classic Tic-Tac-Toe game, built using
+                        HTML, CSS, and JavaScript. The project allows two players to take turns marking spaces on a 3x3
+                        grid until one achieves a winning combination or the game ends in a draw.
+                    </p>
+                    <ul data-i18n="modal_one.description_two">
+                        <li>Key features include:</li>
+                        <li>A clean and responsive user interface.</li>
+                        <li>Visual feedback for player actions.</li>
+                        <li>Logic to detect wins, losses, and draws.</li>
+                    </ul>
+                    <p data-i18n="modal_one.description_three">
+                        This project demonstrates core frontend development skills, including DOM manipulation, event
+                        handling, and basic game logic.
+                    </p>
+                </div>
+            </div>
+            <button type="reset" class="btn btn-alt overlay-cancel-btn-one">&#215;</button>
+        </aside>
+        <aside class="modal cofig-overlay-two">
+            <div class="project-info">
+                <div>
+                    <img src="images/projects/food-order.png" alt="">
+                </div>
+                <div>
+                    <p class="tech">React | JavaScript | Firebase</p>
+                    <p data-i18n="modal_two.description_one">
+                        This is an online food ordering platform built with React, using Firebase as the
+                        backend database. It enables users to browse a menu, manage a shopping cart, and submit orders.
+                    </p>
+                    <p data-i18n="modal_two.description_two">
+                        This project showcases skills in React component-based development, state management (useState,
+                        useReducer), and Firebase integration, making it a great example of a basic e-commerce
+                        application.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <button type="reset" class="btn btn-alt overlay-cancel-btn-two">&#215;</button>
+            </div>
+        </aside>
+        <aside class="modal cofig-overlay-three">
+            <div class="project-info">
+                <div>
+                    <img src="images/projects/fotografie-shop.png" alt="">
+                </div>
+                <div>
+                    <p class="tech">React | Vite | Nodejs | MongoDB</p>
+                    <p data-i18n="modal_three.description_one">
+                        This is a full-stack web application built for professional photographers. It features a public
+                        portfolio site, a private client area, and an admin dashboard for managing clients, orders, and
+                        communication.
+                        <ul data-i18n="modal_three.description_two">
+                            <li>Technologies used:</li>
+                            <li>Frontend: React, Vite, CSS</li>
+                            <li>Backend: Node.js Express</li>
+                            <li>Database: MongoDB</li>
+                            <li>Storage: Supabase (cloud image storage)</li>
+                        </ul>
+                </div>
+            </div>
+            <div>
+                <button type="reset" class="btn btn-alt overlay-cancel-btn-three">&#215;</button>
+            </div>
+        </aside>
+        <section>
+            <div class="contact-box">
+                <p data-i18n="cta.title">Get in Touch</p>
+                <a href="contact.html" data-i18n="cta.button">Contact Me</a>
+                <div class="contact-icon">
+                    <a href="mailto:weegeelee@hotmail.com" class="icon-img email-img" target="_blank"><img
+                            src="images/icons8-neuer-beitrag-64.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/yu-chen-8908ba253/" class="icon-img" target="_blank"><img
+                            src="images/icons8-linkedin-26.png" alt=""></a>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>Copyright &copy; 2023 Yu Chen. All Rights Reserved</p>
+        <p> &copy; 2025 Yu Chen</p>
     </footer>
 </body>
 

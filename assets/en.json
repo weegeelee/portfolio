@@ -1,0 +1,74 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "main": {
+    "intro": "Hello, I am <span class='highlight'>Yu Chen</span>",
+    "role": "Web Developer",
+    "description": "This is my official portfolio website to showcase all details <br /> and experience in web development.",
+    "learn_more": "Learn More",
+    "download": "Download CV"
+  },
+  "projects": {
+    "title": "Browse My Recent",
+    "subtitle": "Projects",
+    "tic_tac_toe": "Tic Tac Toe Game",
+    "food_order": "Food Order",
+    "project_three": "Photography Shop",
+    "project_four": "Project Four"
+  },
+  "modal_one": {
+    "description_one": "This is a simple and interactive implementation of the classic Tic-Tac-Toe game, built using HTML, CSS, and JavaScript. The project allows two players to take turns marking spaces on a 3x3 grid until one achieves a winning combination or the game ends in a draw.",
+    "description_two":  "<li>Key features include:</li><li>A clean and responsive user interface</li><li>Visual feedback for player actions</li><li>Logic to detect wins, losses, and draws</li>",
+    "description_three": "This project demonstrates core frontend development skills, including DOM manipulation, event handling, and basic game logic."
+  },
+  "modal_two": {
+    "description_one": "This is an online food ordering platform built with React, using Firebase as the backend database. It enables users to browse a menu, manage a shopping cart, and submit orders.",
+    "description_two":  "This project showcases skills in React component-based development, state management (useState, useReducer), and Firebase integration, making it a great example of a basic e-commerce application."
+  },
+  "modal_three": {
+    "description_one": "This is a full-stack web application built for professional photographers. It features a public portfolio site, a private client area, and an admin dashboard for managing clients, orders, and communication.",
+    "description_two":  "<li>Technologies used:</li><li>Frontend: React, Vite, CSS</li><li>Backend: Node.js Express</li><li>Database: MongoDB</li><li>Storage: Supabase (cloud image storage)</li>"
+  },
+  "cta": {
+    "title": "Get in Touch",
+    "button": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "intro_one": "Hello! I'm Yu, a web developer with experience in marketing and project management. My journey into programming began in 2022 when I decided to create my own photography website. I quickly discovered my passion for creativity and problem-solving in web development.",
+    "intro_two": "As a linguist and translator, I've always been fascinated by languages, and diving into programming feels like learning an exciting new language. It allows me to combine my analytical skills with my creative vision, crafting intuitive and visually appealing web experiences.",
+    "intro_three": "I'm eager to bring my enthusiasm and adaptability to a team where I can continue to grow and contribute to meaningful projects.",
+    "skills": "Skills",
+    "experience": "Work Experience",
+    "companies": {
+      "position_one": "Sales & Marketing | 2021 - Present",
+      "tasks_one": "<li>Providing Customer Consultation, supporting Existing Clients, and Acquiring New Customers</li><li>Designing and Implementing Responsive Email Campaigns Using HTML and Inline CSS</li><li>Advertising and Market Development</li>",
+      "position_two": "Project Assistant | 2018",
+      "tasks_two": "<li>Managed Websites Using WordPress</li><li>Planned and Executed Advertising and Market Expansion Strategies</li><li>Prepared for Trade Fairs</li>",
+      "position_three": "Project Assistant | 2011",
+      "tasks_three": "<li>Supported Project Management Tasks</li><li>Assisted German Experts and Interpreted</li><li>Coordinated Meetings with Clients</li>",
+      "position_four": "Project Assistant | 2011",
+      "tasks_four": "<li>Translated Documents and Provided On-Site Interpretation</li><li>Scheduled and Coordinated Business Trips</li><li>Organized Technical Trainings for Clients</li>"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "follow": "Follow"
+    }
+  }
+}
