@@ -30,8 +30,8 @@
         "description_two": "Dieses Projekt demonstriert Fähigkeiten in komponentenbasierter React-Entwicklung, Zustandsverwaltung (useState, useReducer) und Firebase-Integration und eignet sich als Beispiel für eine einfache E-Commerce-Anwendung."
     },
     "modal_three": {
-        "description_one": "Dies ist eine moderne Webanwendung für professionelle Fotografen/innen. Sie kombiniert ein elegantes öffentliches Portfolio mit einem geschützten Kundenbereich und einem Admin-Panel zur effizienten Verwaltung von Aufträgen, Alben und Kommunikation.",
-        "description_two": "<li>Verwendete Technologien:</li><li>Frontend: React, Vite, CSS</li><li>Backend: Node.js Express</li><li>Datenbank: MongoDB</li><li>Speicher: Supabase (Cloud-Speicher für Fotos)</li>"
+        "description_one": "Dies ist eine moderne Webanwendung für professionelle Fotografen. Sie kombiniert ein elegantes öffentliches Portfolio mit einem geschützten Kundenbereich und einem Admin-Panel zur effizienten Verwaltung von Aufträgen, Alben und Kommunikation.",
+        "description_two": "<li>Umgesetzte Funktionen:</li><li>Sicheres Login-System mit JWT und individuelle Zugangscodes für private Galerien</li><li>Benutzerdefiniertes Album-Modul zur Fotoauswahl, Bestellung und zum Download</li><li>Intuitive Benutzeroberfläche für Kunden und Administratoren</li>"
     },
     "cta": {
         "title": "Nehmen Sie Kontakt auf",
@@ -40,8 +40,9 @@
     "about": {
         "title": "Über mich",
         "intro_one": "Hallo! Ich bin Yu, eine Webentwicklerin mit Erfahrung im Marketing und Projektmanagement. Meine Reise in die Programmierung begann 2022, als ich beschloss, meine eigene Fotografie-Website zu erstellen. Dabei entdeckte ich schnell meine Begeisterung für die Kreativität und das Problemlösen beim Entwickeln für das Web. Diese Leidenschaft führte mich dazu, eine strukturierte Ausbildung in der Webentwicklung zu verfolgen.",
-        "intro_two": "Als Linguist und Übersetzer war ich schon immer von Sprachen fasziniert, und das Eintauchen in die Programmierung fühlt sich an wie das Erlernen einer spannenden neuen Sprache. Es ermöglicht mir, meine analytischen Fähigkeiten mit meiner kreativen Vision zu verbinden, um intuitive und visuell ansprechende Web-Erlebnisse zu gestalten.",
-        "intro_three": "Ich freue mich darauf, meine Begeisterung und Anpassungsfähigkeit in ein Team einzubringen, in dem ich mich weiterentwickeln und zu bedeutungsvollen Projekten beitragen kann.",
+        "intro_two": "Seitdem habe ich verschiedene Webanwendungen eigenständig umgesetzt - von kleinen Frontend-Projekten bis hin zu einer vollwertigen Full-Stack-Plattform. Dabei arbeite ich mit modernen Technologien wie HTML, CSS, JavaScript, React, Node.js und MongoDB, lege großen Wert auf sauberen Code, eine intuitive User Experience und skalierbare Backend-Lösungen.",
+        "intro_three": "Ich verfüge über eine PSM I-Zertifizierung und bringe durch meine berufliche Erfahrung die Fähigkeit mit, technische Anforderungen verständlich zu vermitteln und effektiv mit verschiedenen Stakeholdern zu kommunizieren.",
+        "intro_four": "Ich freue mich darauf, meine Begeisterung und Anpassungsfähigkeit in ein Team einzubringen, in dem ich mich weiterentwickeln und zu bedeutungsvollen Projekten beitragen kann.",
         "skills": "Fähigkeiten",
         "experience": "Berufserfahrung",
         "companies": {

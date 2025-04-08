@@ -31,7 +31,7 @@
   },
   "modal_three": {
     "description_one": "This is a full-stack web application built for professional photographers. It features a public portfolio site, a private client area, and an admin dashboard for managing clients, orders, and communication.",
-    "description_two":  "<li>Technologies used:</li><li>Frontend: React, Vite, CSS</li><li>Backend: Node.js Express</li><li>Database: MongoDB</li><li>Storage: Supabase (cloud image storage)</li>"
+    "description_two":  "<li>Implemented features:</li><li>Secure login system with JWT and unique access codes for private galleries</li><li>Custom album module for photo selection, order, and downloads</li><li>Intuitive user interface for both clients and administrators</li>"
   },
   "cta": {
     "title": "Get in Touch",
@@ -39,9 +39,10 @@
   },
   "about": {
     "title": "About Me",
-    "intro_one": "Hello! I'm Yu, a web developer with experience in marketing and project management. My journey into programming began in 2022 when I decided to create my own photography website. I quickly discovered my passion for creativity and problem-solving in web development.",
-    "intro_two": "As a linguist and translator, I've always been fascinated by languages, and diving into programming feels like learning an exciting new language. It allows me to combine my analytical skills with my creative vision, crafting intuitive and visually appealing web experiences.",
-    "intro_three": "I'm eager to bring my enthusiasm and adaptability to a team where I can continue to grow and contribute to meaningful projects.",
+    "intro_one": "Hello! I'm Yu, a web developer with experience in marketing and project management. My journey into programming began in 2022 when I decided to create my own photography website. I quickly discovered my passion for creativity and problem-solving in web development, which led me to pursue a structured path in learning modern web technologies.",
+    "intro_two": "Since then, I have independently developed various web applications — from small frontend projects to a fully functional full-stack platform. I work with technologies like HTML, CSS, JavaScript, React, Node.js, and MongoDB, and I place great importance on clean code, intuitive user experiences, and scalable backend solutions.",
+    "intro_three": "I hold a Professional Scrum Master I certification and bring strong communication skills from my previous roles, enabling me to translate technical requirements clearly and collaborate effectively with diverse stakeholders.",
+    "intro_four": "I'm excited to contribute my enthusiasm and adaptability to a team where I can continue growing and help create meaningful digital solutions.",
     "skills": "Skills",
     "experience": "Work Experience",
     "companies": {
