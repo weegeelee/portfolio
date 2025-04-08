@@ -14,9 +14,9 @@ function setDownloadLink(language) {
     const downloadLink = document.getElementById("download-link");
     if (!downloadLink) return;
     if (language === "de") {
-      downloadLink.href = "./assets/Lebenslauf-Yu_Chen.pdf"; 
+      downloadLink.href = "./assets/Lebenslauf-Yu Chen.pdf"; 
     } else {
-      downloadLink.href = "./assets/resume.pdf"; 
+      downloadLink.href = "./assets/CV-Yu Chen.pdf"; 
     }
   }
 
