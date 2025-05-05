@@ -21,17 +21,21 @@
     "project_four": "Project Four"
   },
   "modal_one": {
+    "description_one": "This is a full-stack web application built for professional photographers. It features a public portfolio site, a private client area, and an admin dashboard for managing clients, orders, and communication.",
+    "description_two":  "<li>Implemented features:</li><li>Secure login system with JWT and unique access codes for private galleries</li><li>Custom album module for photo selection, order, and downloads</li><li>Intuitive user interface for both clients and administrators</li>"
+  },
+  "modal_two": {
+    "description_one": "This is a lightweight job application management system built with React, TypeScript, Node.js, and MongoDB. It allows users to record job applications, track their status, and analyze application trends through visual dashboards.",
+        "description_two": "<li>Key Features:</li><li>Customizable job board to track positions, notes, and application statuses</li><li>Analytics dashboard with interactive charts showing application trends, status distribution, and activity over time</li><li>Status tracking from planning to applied, interviewing, hired, or rejected</li>"
+  },
+  "modal_three": {
+     "description_one": "This is an online food ordering platform built with React, using Firebase as the backend database. It enables users to browse a menu, manage a shopping cart, and submit orders.",
+    "description_two":  "This project showcases skills in React component-based development, state management (useState, useReducer), and Firebase integration, making it a great example of a basic e-commerce application."
+  },
+  "modal_four": {
     "description_one": "This is a simple and interactive implementation of the classic Tic-Tac-Toe game, built using HTML, CSS, and JavaScript. The project allows two players to take turns marking spaces on a 3x3 grid until one achieves a winning combination or the game ends in a draw.",
     "description_two":  "<li>Key features include:</li><li>A clean and responsive user interface</li><li>Visual feedback for player actions</li><li>Logic to detect wins, losses, and draws</li>",
     "description_three": "This project demonstrates core frontend development skills, including DOM manipulation, event handling, and basic game logic."
-  },
-  "modal_two": {
-    "description_one": "This is an online food ordering platform built with React, using Firebase as the backend database. It enables users to browse a menu, manage a shopping cart, and submit orders.",
-    "description_two":  "This project showcases skills in React component-based development, state management (useState, useReducer), and Firebase integration, making it a great example of a basic e-commerce application."
-  },
-  "modal_three": {
-    "description_one": "This is a full-stack web application built for professional photographers. It features a public portfolio site, a private client area, and an admin dashboard for managing clients, orders, and communication.",
-    "description_two":  "<li>Implemented features:</li><li>Secure login system with JWT and unique access codes for private galleries</li><li>Custom album module for photo selection, order, and downloads</li><li>Intuitive user interface for both clients and administrators</li>"
   },
   "cta": {
     "title": "Get in Touch",

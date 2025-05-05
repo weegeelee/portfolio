@@ -21,18 +21,23 @@
         "project_four": "Project Four"
     },
     "modal_one": {
+        "description_one": "Dies ist eine moderne Webanwendung für professionelle Fotografen. Sie kombiniert ein elegantes öffentliches Portfolio mit einem geschützten Kundenbereich und einem Admin-Panel zur effizienten Verwaltung von Aufträgen, Alben und Kommunikation.",
+        "description_two": "<li>Umgesetzte Funktionen:</li><li>Sicheres Login-System mit JWT und individuelle Zugangscodes für private Galerien</li><li>Benutzerdefiniertes Album-Modul zur Fotoauswahl, Bestellung und zum Download</li><li>Intuitive Benutzeroberfläche für Kunden und Administratoren</li>"
+    },
+    "modal_two": {
+        "description_one": "Dies ist ein leichtgewichtiges Bewerbungsmanagement-System, entwickelt mit React, TypeScript, Node.js und MongoDB. Nutzer können Bewerbungen erfassen, deren Status verfolgen und ihre Aktivitäten über visuelle Dashboards analysieren.",
+        "description_two": "<li>Umgesetzte Funktionen:</li><li>Individuelles Job-Board zur Erfassung von Stellen, Notizen und Bewerbungsstatus</li><li>Analyse-Dashboard mit interaktiven Diagrammen zur Auswertung der Bewerbungsaktivität</li><li>Status-Tracking: Verfolge jeden Job von „in Planung“ bis „eingestellt“ oder „abgelehnt“</li>"
+    },
+    "modal_three": {
+        "description_one": "Dies ist eine Online-Bestellplattform für Essen, die mit React entwickelt wurde und Firebase als Datenbank nutzt. Sie ermöglicht es Benutzern, eine Speisekarte zu durchsuchen, einen Warenkorb zu verwalten und Bestellungen aufzugeben.",
+        "description_two": "Dieses Projekt demonstriert Fähigkeiten in komponentenbasierter React-Entwicklung, Zustandsverwaltung (useState, useReducer) und Firebase-Integration und eignet sich als Beispiel für eine einfache E-Commerce-Anwendung."
+    },
+    "modal_four": {
         "description_one": "Das ist eine einfache und interaktive Umsetzung des klassischen Tic-Tac-Toe-Spiels, entwickelt mit HTML, CSS und JavaScript. Das Projekt ermöglicht es zwei Spielern, abwechselnd Felder auf einem 3x3-Raster zu markieren, bis einer eine Gewinnkombination erreicht oder das Spiel unentschieden endet.",
         "description_two": "<li>Zu den Hauptmerkmalen gehören:</li><li>Eine übersichtliche und responsive Benutzeroberfläche</li><li>Visuelle Rückmeldung für Spieleraktionen</li><li>Logik zur Erkennung von Gewinnen, Niederlagen und Unentschieden</li>",
         "description_three": "Dieses Projekt demonstriert grundlegende Frontend-Entwicklungsfähigkeiten, einschließlich DOM-Manipulation, Event-Handling und grundlegende Spiellogik."
     },
-    "modal_two": {
-        "description_one": "Dies ist eine Online-Bestellplattform für Essen, die mit React entwickelt wurde und Firebase als Datenbank nutzt. Sie ermöglicht es Benutzern, eine Speisekarte zu durchsuchen, einen Warenkorb zu verwalten und Bestellungen aufzugeben.",
-        "description_two": "Dieses Projekt demonstriert Fähigkeiten in komponentenbasierter React-Entwicklung, Zustandsverwaltung (useState, useReducer) und Firebase-Integration und eignet sich als Beispiel für eine einfache E-Commerce-Anwendung."
-    },
-    "modal_three": {
-        "description_one": "Dies ist eine moderne Webanwendung für professionelle Fotografen. Sie kombiniert ein elegantes öffentliches Portfolio mit einem geschützten Kundenbereich und einem Admin-Panel zur effizienten Verwaltung von Aufträgen, Alben und Kommunikation.",
-        "description_two": "<li>Umgesetzte Funktionen:</li><li>Sicheres Login-System mit JWT und individuelle Zugangscodes für private Galerien</li><li>Benutzerdefiniertes Album-Modul zur Fotoauswahl, Bestellung und zum Download</li><li>Intuitive Benutzeroberfläche für Kunden und Administratoren</li>"
-    },
+    
     "cta": {
         "title": "Nehmen Sie Kontakt auf",
         "button": "Kontakt"

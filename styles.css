@@ -13,7 +13,7 @@
     margin: 5rem 0;
     display: flex;
     justify-content: center;
-   
+
 }
 
 .box-img img {
@@ -102,9 +102,9 @@
     margin: 2rem auto;
 }
 
-.project-container ul{
+.project-container ul {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
 }
 
 .project-container li {
@@ -141,9 +141,15 @@
     text-align: center;
 }
 
-.project-box h3:hover {  
-    color: rgb(137, 97, 51); 
+.project-box h3:hover {
+    color: rgb(137, 97, 51);
     cursor: pointer;
+}
+
+#projekt .techno {
+    font: inherit;
+    font-size: 0.9rem;
+    margin: 2rem 0;
 }
 
 .project-box a {
@@ -193,14 +199,15 @@
     padding: 2rem;
     transition: 0.4s ease;
 }
+
 .contact-box:hover {
     background-color: rgb(255, 255, 255, .3);
 }
 
-.contact-box p{
+.contact-box p {
     font-size: 1rem;
     color: rgb(90, 90, 90);
-    margin: 0.25rem 0; 
+    margin: 0.25rem 0;
 }
 
 .contact-box a {
@@ -218,7 +225,7 @@
     color: rgb(137, 97, 51);
     text-decoration: underline;
     text-decoration-color: rgb(255, 255, 255, .8);
-    text-underline-offset: 1rem; 
+    text-underline-offset: 1rem;
 }
 
 .contact-box button {
@@ -251,7 +258,7 @@
 .contact-icon .email-img img {
     width: 1.1rem;
     height: 1.1rem;
-} 
+}
 
 .contact-icon img:hover {
     box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
