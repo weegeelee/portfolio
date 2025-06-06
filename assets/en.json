@@ -17,8 +17,8 @@
     "subtitle": "Projects",
     "tic_tac_toe": "Tic Tac Toe Game",
     "food_order": "Food Order",
-    "project_three": "Photography Shop",
-    "project_four": "Project Four"
+    "fotografie_shop": "Photography Shop",
+    "job_tracker": "Job Tracker"
   },
   "modal_one": {
     "description_one": "This is a full-stack web application built for professional photographers. It features a public portfolio site, a private client area, and an admin dashboard for managing clients, orders, and communication.",

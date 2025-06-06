@@ -17,8 +17,8 @@
         "subtitle": "Projekte",
         "tic_tac_toe": "Tic Tac Toe Spiel",
         "food_order": "Essen Bestellung",
-        "project_three": "Fotografie Shop",
-        "project_four": "Project Four"
+        "fotografie_shop": "Fotografie Shop",
+        "job_tracker": "Job Tracker"
     },
     "modal_one": {
         "description_one": "Dies ist eine moderne Webanwendung für professionelle Fotografen. Sie kombiniert ein elegantes öffentliches Portfolio mit einem geschützten Kundenbereich und einem Admin-Panel zur effizienten Verwaltung von Aufträgen, Alben und Kommunikation.",
